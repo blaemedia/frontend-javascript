@@ -10,11 +10,11 @@ const java = new Java();
 const react = new React();
 
 // Export teacher object
-export const cTeacher: Subjects.Teacher = {
+export const cTeacher: Teacher = {
     firstName: "John",
     lastName: "Doe",
     experienceTeachingC: 10
-};
+}; 
 
 // For Cpp subject
 console.log("C++");
