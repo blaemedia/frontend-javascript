@@ -2,10 +2,12 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-// Export constants
-export const cpp = new Subjects.Cpp();
-export const java = new Subjects.Java();
-export const react = new Subjects.React();
+
+
+// Export constants - using exact syntax required
+const cpp = new Cpp();
+const java = new Java();
+const react = new React();
 
 // Export teacher object
 export const cTeacher: Subjects.Teacher = {
