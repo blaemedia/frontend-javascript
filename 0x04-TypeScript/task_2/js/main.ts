@@ -12,7 +12,7 @@ interface TeacherInterface {
 }
 
 // Classes
-class Director implements DirectorInterface {
+ class Director implements DirectorInterface {
   workFromHome(): string {
     return "Working from home";
   }
@@ -49,7 +49,7 @@ function createEmployee(salary: number | string): Director | Teacher {
 }
 
 // Type predicate
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return (employee as Director).workDirectorTasks !== undefined;
 }
 
